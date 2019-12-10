@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 
 #Mathajas
-#Showing battery state on screen of V
+#Showing battery state on screen of Vector Face.
+
 
 
 import anki_vector
