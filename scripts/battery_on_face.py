@@ -25,17 +25,7 @@ def calulate_butt(_hm_butt):
     return proc
 
 def make_batt_image(_proc_butt):
-    '''Make a PIL.Image with the given text printed on it
-
-   Args:
-       text_to_draw (string): the text to draw to the image
-       x (int): x pixel location
-       y (int): y pixel location
-       font (PIL.ImageFont): the font to use
-
-   Returns:
-       :class:(`PIL.Image.Image`): a PIL image with the text drawn on it
-   '''
+    #create image of battery
     dimensions = (184, 96)
     loaded = 110-(110*_proc_butt)
     if loaded<0: loaded=0
@@ -54,11 +44,6 @@ def make_batt_image(_proc_butt):
     elif _proc_butt > 0.3 : sq1.rectangle(shape3, fill="#eeb932")
     else : sq1.rectangle(shape3, fill="#7d0d2b")
     return batt_image_bg
-
-
-
-
-# Set text to create image from here
 
 
 def main():
